@@ -1,5 +1,5 @@
 language: node_js
-script: "sudo PATH=PATH npm test"
+script: "sudo /usr/bin/env/npm test"
 node_js:
   - 0.8
   - 0.9
