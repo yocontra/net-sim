@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/wearefractal/net-sim.png?branch=master)](https://travis-ci.org/wearefractal/net-sim)
 
+If this is failing it is because travis-ci doesn't allow firewall manipulation.
+
 [![NPM version](https://badge.fury.io/js/net-sim.png)](http://badge.fury.io/js/net-sim)
 
 ## Information
