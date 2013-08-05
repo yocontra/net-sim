@@ -1,16 +1,16 @@
-[![Build Status](https://travis-ci.org/wearefractal/APPNAME.png?branch=master)](https://travis-ci.org/wearefractal/APPNAME)
+[![Build Status](https://travis-ci.org/wearefractal/net-sim.png?branch=master)](https://travis-ci.org/wearefractal/net-sim)
 
-[![NPM version](https://badge.fury.io/js/APPNAME.png)](http://badge.fury.io/js/APPNAME)
+[![NPM version](https://badge.fury.io/js/net-sim.png)](http://badge.fury.io/js/net-sim)
 
 ## Information
 
 <table>
 <tr> 
-<td>Package</td><td>APPNAME</td>
+<td>Package</td><td>net-sim</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>DESCRIPTIONHERE</td>
+<td>Simulate network conditions</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -18,15 +18,28 @@
 </tr>
 </table>
 
+You probably need sudo to run this.
+
 ## Usage
 
 ```javascript
-EXAMPLEHERE
+var sim = require('net-sim');
+
+sim.setLatency('127.0.0.1', 500, function(err){
+  // run some tests here
+
+  sim.clear(function(err){
+
+  });
+});
 ```
+
+
+Latency is added both ways so if you say 250 then a ping will take 500ms (round trip).
 
 ## Examples
 
-You can view more examples in the [example folder.](https://github.com/wearefractal/APPNAME/tree/master/examples)
+You can view more examples in the [example folder.](https://github.com/wearefractal/net-sim/tree/master/examples)
 
 ## LICENSE
 

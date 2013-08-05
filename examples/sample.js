@@ -1,2 +1,2 @@
-var APPNAME = require('../');
+var sim = require('../');
 

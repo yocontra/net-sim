@@ -1,18 +1,20 @@
 {
-   "name":"APPNAME",
-   "description":"DESCRIPTIONHERE",
+   "name":"net-sim",
+   "description":"Simulate network conditions",
    "version":"0.0.1",
-   "homepage":"http://github.com/wearefractal/APPNAME",
-   "repository":"git://github.com/wearefractal/APPNAME.git",
+   "homepage":"http://github.com/wearefractal/net-sim",
+   "repository":"git://github.com/wearefractal/net-sim.git",
    "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
    "main":"./index.js",
    
    "dependencies":{
-      
+      "which":"*",
+      "async":"*"
    },
    "devDependencies":{
       "mocha":"*",
-      "should":"*"
+      "should":"*",
+      "net-ping":"*"
    },
    "scripts":{
       "test":"mocha"
@@ -23,7 +25,7 @@
    "licenses":[
       {
          "type":"MIT",
-         "url":"http://github.com/wearefractal/APPNAME/raw/master/LICENSE"
+         "url":"http://github.com/wearefractal/net-sim/raw/master/LICENSE"
       }
    ]
 }
