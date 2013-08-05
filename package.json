@@ -14,7 +14,7 @@
    "devDependencies":{
       "mocha":"*",
       "should":"*",
-      "net-ping":"*"
+      "pinger":"*"
    },
    "scripts":{
       "test":"mocha"

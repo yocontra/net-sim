@@ -2,7 +2,7 @@ var sim = require('../');
 var should = require('should');
 require('mocha');
 
-var ping = require('./ping');
+var ping = require('pinger');
 var origms = null;
 var latencyTest = 25;
 
