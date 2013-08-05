@@ -22,7 +22,7 @@ describe('net-sim', function() {
 
   describe('setLatency()', function() {
     it('should add latency', function(done) {
-      sim.setLatency('127.0.0.1', latencyTest, function(err){
+      sim.addLatency('127.0.0.1', latencyTest, function(err){
         should.not.exist(err);
 
         var expected = origms+(latencyTest*2);

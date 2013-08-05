@@ -18,14 +18,14 @@
 </tr>
 </table>
 
-You probably need sudo to run this.
+You need to run this as root. This project aims to be cross-platform but so far only supports BSD/OSX using `ipfw`. I will add support on an as needed basis but PRs for this are welcome.
 
 ## Usage
 
 ```javascript
 var sim = require('net-sim');
 
-sim.setLatency('127.0.0.1', 500, function(err){
+sim.addLatency('127.0.0.1', 25, function(err){
   // run some tests here
 
   sim.clear(function(err){
@@ -34,8 +34,13 @@ sim.setLatency('127.0.0.1', 500, function(err){
 });
 ```
 
+#### sim.addLatency(ip/host, ms, cb)
 
-Latency is added both ways so if you say 250 then a ping will take 500ms (round trip).
+Latency is added both ways so if you say 250 then a ping will take 500ms (round trip). Adding latency multiple times is supported so make sure you .clear() if you are trying to reset it to another value.
+
+#### sim.clear(cb)
+
+Clear out all rules added to the OS. Removes any latency added.
 
 ## Examples
 
